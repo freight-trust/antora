@@ -28,10 +28,11 @@ There are two protocols involved in staking
 === Staking
 
 [WARNING]
-===
+====
 We are in the process of migrating from markdown into asciidoc, styling may not render properly
-===
+====
 
+|====
 | Contract | Description |
 | --- | --- |
 | Staking Contract | An upgradeable contract that implements staking  |
@@ -40,7 +41,7 @@ We are in the process of migrating from markdown into asciidoc, styling may not 
 | **Registry** | Enables Pools to form that users may wish to delegate |
 | $EDI Vault | Securely holds staked $EDI Tokens |
 | $EDI Treasury | Securely holds $EDI Tokens for payouts |
-
+|====
 
 === Payout Formula
 
@@ -50,6 +51,7 @@ Staking Pools can be thought of as a delegated pool: Network Operators must form
 
   $$  r=R \times\left(\frac{f}{F}\right)^{\alpha} \times\left(\frac{d}{D}\right)^{1-a}  $$
 
+|====
 | Term | Definition |
 | --- | --- |
 | _r_ | Reward for a specific pool. |
@@ -59,7 +61,7 @@ Staking Pools can be thought of as a delegated pool: Network Operators must form
 | _d_ | Total weighted $EDI staked by the pool this epoch. |
 | _D_ | Total weighted $EDI staked across all (active) pools this epoch. |
 | _α_ | A constant in the range \[0..1\] that determines the weight of fees vs stake. |
-
+|====
 
 
 === Basic Functionalities
@@ -73,6 +75,7 @@ The contract offers three basic functionalities.
 Stakers themselves are the only ones that can opt-in to migrate their tokens from the current contract to the new one. As Stakers opt-in to new contracts, the migration manager cannot access nor prevent them from withdrawing their tokens.
 
 === Functionality
+
 
 `approve()` + `stake()` +   `unstake()` + `withdraw()` + `restake()`
 
@@ -125,4 +128,3 @@ Since `distributeRewards()` and `withdrawReleasedStakes()` are batched operation
 
 === Payout Estimator
 
-=== Terms and Conditions

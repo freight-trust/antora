@@ -1,6 +1,6 @@
 antoraVersion: '1.0.0'
 site:
-  url: https://ft-docs.netlify.app
+  url: https://freight-docs.netlify.app
   title: Freight Trust & Clearing Omnibus
   homeUrl: &home_url /index.html
   components:
@@ -15,7 +15,7 @@ site:
     - url: '#' 
       version: '3.0.0'
       displayVersion: '3.0.0'
-    - url: /rulebook/1-general.html
+    - url: /rulebook/general.html
     latestVersion: *latest_version_omnibus
   - &component
     name: Global Data Service Interchange
@@ -58,7 +58,7 @@ page:
   version: '3.0.1'
   displayVersion: '3.0.1'
   module: ROOT
-  editUrl: http://gitlab.com/fr8/omnibus
+  editUrl: http://github.com/freight-trust/antora
   origin:
     private: false
   previous:
@@ -100,30 +100,11 @@ page:
   - content: Suspension
     url: /rulebook/suspension.html
     urlType: fragment
-  - content: Deliberation Rules
-    items:
-    - content: Business Rules
-      url: business-rules.html
-      urlType: fragment
-    - content: Namespace
-      url: ns.html
-      urlType: fragment
-    - content: Rules of Behavior
-      url: rules-of-behavior.html
-      urlType: fragment
-  - content: Deliberation Rules
-    items:
-    - content: Ecosystem
-      url: /whitepapers/ecosystem.html
-      urlType: fragment
-    - content: $EDI Token
-      url: /whitepapers/util.html
-      urlType: fragment
   - content: Supply Chain
-    url: /supply-chain/README.html
+    url: "#"
     urlType: fragment
     items:
-    - content: Bills of Lading (211)
+    - content: Bills of Lading
       url: /supply-chain/bill-of-lading/bill-of-lading-rules.html
       urlType: fragment
     - content: Non Negotiable BOL
@@ -148,13 +129,10 @@ page:
     - content: Protocol
       url: /blockchain/contracts-v1.html
       urlType: fragment
-    - content: Token Mechanics
-      url: /blockchain/token-mechanics.html
-      urlType: fragment
-    - content: Token Utility 
+    - content: Pricing Model
       url: /blockchain/pricing.html
       urlType: fragment
-    - content: Token Staking
+    - content: Token Staking & Mechanics
       url: /blockchain/staking.html
       urlType: fragment
     - content: Network Upgrading
@@ -162,13 +140,6 @@ page:
       urlType: fragment
     - content: Wallets
       url: /blockchain/add-metamask.html
-      urlType: fragment
-  - content: Staking and Nodes
-    url: /rules-of-behavior.html
-    urlType: fragment
-    items:
-    - content: ERC & Node Staking
-      url: /staking.html
       urlType: fragment
   - content: Network
     url: '#'
@@ -284,9 +255,21 @@ page:
     url: '#'
     urlType: fragment
     items:
+    - content: CDM
+      url: /whitepapers/util.html
+      urlType: fragment   
+    - content: Design Considerations
+      url: /whitepapers/util.html
+      urlType: fragment     
+    - content: Message Design
+      url: /whitepapers/message-design.html
+      urlType: fragment    
     - content: Leximatic Grammer
       url: /grammar/index.html
       urlType: fragment
-    - content: CDM
-      url: /grammar/output.html
+    - content: Comparision to other Frameworks
+      url: /whitepapers/similarities-to-existing-regulatory-frameworks.html
+      urlType: fragment
+    - content: Axioms
+      url: /whitepapers/axioms.html
       urlType: fragment
