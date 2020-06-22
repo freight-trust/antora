@@ -111,14 +111,6 @@ page:
     - content: Rules of Behavior
       url: rules-of-behavior.html
       urlType: fragment
-  - content: Deliberation Rules
-    items:
-    - content: Ecosystem
-      url: /whitepapers/ecosystem.html
-      urlType: fragment
-    - content: $EDI Token
-      url: /whitepapers/util.html
-      urlType: fragment
   - content: Supply Chain
     url: /supply-chain/README.html
     urlType: fragment
