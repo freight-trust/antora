@@ -148,13 +148,10 @@ page:
     - content: Protocol
       url: /blockchain/contracts-v1.html
       urlType: fragment
-    - content: Token Mechanics
-      url: /blockchain/token-mechanics.html
-      urlType: fragment
     - content: Token Utility 
       url: /blockchain/pricing.html
       urlType: fragment
-    - content: Token Staking
+    - content: Token Staking & Mechanics
       url: /blockchain/staking.html
       urlType: fragment
     - content: Network Upgrading
@@ -168,7 +165,7 @@ page:
     urlType: fragment
     items:
     - content: ERC & Node Staking
-      url: /staking.html
+      url: /blockchain/staking.html
       urlType: fragment
   - content: Network
     url: '#'
