@@ -1,4 +1,15 @@
 = Neutral Legal Framework based upon Lex Meroatoria and the Common Law System
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
+
+:doctype: book
+
+
+
+== Overview
 
 IncoTerms + UCC + UNICALDRIOT
 

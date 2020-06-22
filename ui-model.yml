@@ -101,10 +101,10 @@ page:
     url: /rulebook/suspension.html
     urlType: fragment
   - content: Supply Chain
-    url: /supply-chain/README.html
+    url: "#"
     urlType: fragment
     items:
-    - content: Bills of Lading (211)
+    - content: Bills of Lading
       url: /supply-chain/bill-of-lading/bill-of-lading-rules.html
       urlType: fragment
     - content: Non Negotiable BOL
@@ -255,9 +255,21 @@ page:
     url: '#'
     urlType: fragment
     items:
+    - content: CDM
+      url: /whitepapers/util.html
+      urlType: fragment   
+    - content: Design Considerations
+      url: /whitepapers/util.html
+      urlType: fragment     
+    - content: Message Design
+      url: /whitepapers/message-design.html
+      urlType: fragment    
     - content: Leximatic Grammer
       url: /grammar/index.html
       urlType: fragment
-    - content: CDM
-      url: /grammar/output.html
+    - content: Comparision to other Frameworks
+      url: /whitepapers/similarities-to-existing-regulatory-frameworks.html
+      urlType: fragment
+    - content: Axioms
+      url: /whitepapers/axioms.html
       urlType: fragment

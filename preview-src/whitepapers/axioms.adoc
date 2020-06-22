@@ -1,4 +1,13 @@
 = Axioms
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
+
+:doctype: book
+
+== Overview
 
 1. The network is unreliable
 

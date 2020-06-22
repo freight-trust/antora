@@ -1,11 +1,20 @@
-= Design
+= Design Methodology
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
 
-Focus of this
+:doctype: book
+
+== Abstract
 Ignoring the consistency-latency tradeoff of replicated systems is a great oversight, since it is present at all times during system operation, whereas CAP is only relevant in the (arguably) rare case of a network partition. In fact, the consistency-latency tradeoff is potentially more significant than CAP, since it has a more direct effect of the baseline operations of modern distributed database systems.
 
 == System Model and Components
-
-==== Network Components
+[IMPORTANT]
+====
+We use a reverse dependency model for establishing our architectural framework and overall design. This pattern is referred to as "hexagonal"
+====
 
 [[blockchain]]
 The *Blockchain* serves as a global log of configuration and meta
@@ -14,29 +23,31 @@ their activities (such as schemas they use (e.g. X12 4010), service levels they 
 
 
 [[nodes]]
----
+====
 [[authority]]
 [[coordinator]]
 [[publisher]]
 [[nodelet: sequence, schedule, storage]]
----
+====
+
 
 == Node Layers
-[[sequencing-layer]]
-The sequencing layer (or “sequencer”) intercepts transactional inputs and
+
+** [[sequencing-layer]]
+- The sequencing layer (or “sequencer”) intercepts transactional inputs and
 places them into a global transactional input sequence—this sequence will be the order of
 transactions to which all replicas will ensure serial equivalence during their execution. The
 sequencer therefore also handles the replication and logging of this input sequence.
 
 
-[[scheduling-layer]]
-The scheduling layer (or “scheduler”) orchestrates transaction execution using
+** [[scheduling-layer]]
+- The scheduling layer (or “scheduler”) orchestrates transaction execution using
 a deterministic locking scheme to guarantee equivalence to the serial order specified by the
 sequencing layer while allowing transactions to be executed concurrently by a pool of transaction
 execution threads
 
-[[storage-layer]]
-The storage layer handles all physical data layout.
+** [[storage-layer]]
+- The storage layer handles all physical data layout.
 
 
 === Sequencer and Replication

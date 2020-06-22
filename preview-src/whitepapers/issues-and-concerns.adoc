@@ -1,3 +1,11 @@
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
+
+:doctype: book
+
 Excluded vs.
 Exempt Commodity
 

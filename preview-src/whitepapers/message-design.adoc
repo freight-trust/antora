@@ -1,14 +1,12 @@
 = X12 Standards
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
 
-*DISA Address*
+:doctype: book
 
-[verse]
---
-Data Interchange Standards Association, Inc.
-1800 Diagonal Road, Suite 200
-Alexandria, VA 22314-2852
-(703) 548-7005
---
 
 == ASC X12 Standards
 
@@ -87,7 +85,7 @@ ASCII hex values:    01  02  03  04  05  06  11  12  13  14  15  16  17
 
 
 Elements and higher structures of the EDI transaction sets are
-distinguished by ```delimiters```. Three delimiter values may be used: two
+distinguished by ```delimiters``. Three delimiter values may be used: two
 levels of separators, for elements and sub-elements, and a terminator
 which indicates the end of a data segment. Delimiters are specified in
 the header of each interchange and shall not be used within a data
@@ -128,7 +126,7 @@ return/linefeed
 |[.title-ref]#<gs># a|
 [verse]
 --
-Unix backtick (`)
+Unix backtick (`)`
 [.title-ref]#60# hex, 96 dec
 --
 
@@ -143,7 +141,7 @@ a|
 [verse]
 --
 asterisk (*)
-tilde (~)
+tilde
 --
 
 |[.title-ref]#<us># a|
@@ -265,12 +263,15 @@ composite data structures in a segment. Each unit referenced has a
 requirement and an ordinal sequence in the segment.
 
 [WARNING]
+=====
 In the actual data
 transmission omitted elements are indicated by including their
 delimiters to preserve this sequence, except for elements which are
 omitted at the end of the segment.
 
 `<!> Freight Trust Strictly Enforces which delimiters can be used`
+=====
+
 
 <<<
 == Transaction Sets

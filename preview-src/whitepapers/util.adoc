@@ -5,6 +5,8 @@
 :!table-caption:
 :page-pagination:
 
+:doctype: book
+
 == In brief
 
 We adopt a “cryptoasset” pricing model, evaluate our current token model, and propose several changes in order to maximize value accrual as the network opens for public (i.e. business) usage. Much of this work is based on sources found at the end, and we would like to thank everyone who offered their critiques and thoughts on the subject.

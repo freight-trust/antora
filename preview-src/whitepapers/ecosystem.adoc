@@ -5,6 +5,7 @@
 :!table-caption:
 :page-pagination:
 
+:doctype: book
 
 link:https://medium.com/freighttrust/evolving-the-freight-trust-ecosystem-fe77d7f28b8c[originally published on our medium blog]
 

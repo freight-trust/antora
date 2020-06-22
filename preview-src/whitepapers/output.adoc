@@ -1,8 +1,16 @@
+= Common Domain Model
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
+
+:doctype: book
 ____
-https://docs.rosetta-technology.io/index.html[Docs] » https://docs.rosetta-technology.io/dsl/index.html[The Roseta DSL documentafion] » Roseta Modelling Components
+link:https://docs.rosetta-technology.io/index.html[Docs] » https://docs.rosetta-technology.io/dsl/index.html[The Roseta DSL documentafion] » Roseta Modelling Components
 ____
 
-Rosetta Modelling Components
+= Rosetta Modelling Components
 
 ____
 *The Roseta syntax can express ﬁve types of model components*:
