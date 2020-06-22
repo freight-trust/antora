@@ -15,7 +15,7 @@ site:
     - url: '#' 
       version: '3.0.0'
       displayVersion: '3.0.0'
-    - url: /rulebook/1-general.html
+    - url: /rulebook/general.html
     latestVersion: *latest_version_omnibus
   - &component
     name: Global Data Service Interchange
@@ -58,7 +58,7 @@ page:
   version: '3.0.1'
   displayVersion: '3.0.1'
   module: ROOT
-  editUrl: http://gitlab.com/fr8/omnibus
+  editUrl: http://github.com/freight-trust/antora
   origin:
     private: false
   previous:
@@ -100,17 +100,6 @@ page:
   - content: Suspension
     url: /rulebook/suspension.html
     urlType: fragment
-  - content: Deliberation Rules
-    items:
-    - content: Business Rules
-      url: business-rules.html
-      urlType: fragment
-    - content: Namespace
-      url: ns.html
-      urlType: fragment
-    - content: Rules of Behavior
-      url: rules-of-behavior.html
-      urlType: fragment
   - content: Supply Chain
     url: /supply-chain/README.html
     urlType: fragment
