@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Central Dogma :: Freight Trust &amp; Clearing Omnibus</title>
+    <title>EDI Message Structure :: Freight Trust &amp; Clearing Omnibus</title>
     <meta name="generator" content="Antora 1.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
   </head>
@@ -369,196 +369,99 @@
   </div>
   <div class="content">
 <article class="doc">
-<h1 class="page">Central Dogma</h1>
+<h1 class="page">EDI Message Structure</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>I believe our capacity to provide opportunities for cooperation within such a competitive sector will not only help but increase the rate of adoption going forward.
-Such an intricate problem that we are solving requires a careful appreciation for the intricate interplay of intercontinental trade.
-However, we can&#8217;t let too many details cloud the path.
-This article describes more of the theory that we are applying in order to achieve something we call legal parity.</p>
+<p>EDI messages consist of an envelope and a hierarchical series of structural elements. The envelope contains a set of headers and trailers, each set of which describes and contains a structural element. These structural elements are as follows:</p>
 </div>
 <div class="paragraph">
-<p>As we have previously outlined, there are three sorts of smart contracts:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>functional</p>
-</li>
-<li>
-<p>equivalent</p>
-</li>
-<li>
-<p>parity</p>
-</li>
-</ul>
+<p>Interchange
+   Group
+      Transaction set/message
+         Segment
+            Data Element
+               Sub Element</p>
 </div>
 <div class="paragraph">
-<p>Functional being that it posses an enforcement mechanism to induce behavior in a programmed mechanism, e.g.
-an escrow contract.
-Equivalent would be where your contractual rights are enforceable, such as a loan that defaults asserting your rights.
-Parity would mean that it does the exact behavior of actual legal contracts, in that it also involves 3rd parties into the process, e.g.
-insurance companies.
-Now that we have the terminology to be able to express the legaliness, we can move onto the network itself.
-First, let&#8217;s define what an effective network is, as that is our ultimate goal: none of this will be useful if the network itself is not an effective regime.
-The effectiveness of any network or regime (Barrett 2003) is a function of three factors:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The ambition of its provisions</p>
-</li>
-<li>
-<p>The level of participation between actors</p>
-</li>
-<li>
-<p>The degree to which actors comply with this framework</p>
-</li>
-</ul>
+<p>The hierarchical structure of an EDI message enables transaction sets/messages and groups to be batched. Even if an interchange contains only one transaction set/message and only one group, that interchange is structured with the same basic structural elements that it would have if it were batched, with the exception that there would not be multiple transaction set/message or group elements.</p>
 </div>
 <div class="paragraph">
-<p>In designing version 2 of the protocol we had to set forth some design criteria to be able to model not only user behavior but also to help in planning long term priorities in terms of what we should focus on so that we may realize this.
-Taking a mathematical approach to smart contract design is useful in this attempt as it provides us with criteria that we can and can not do.</p>
+<p>The headers and trailers for both X12 and EDIFACT are similar. The major difference is the UNA Service String Advice header for EDIFACT, which defines the separators used in the interchange. In X12 encoding, the separators are defined in the ISA Interchange Control Header.</p>
 </div>
-<div class="quoteblock">
-<blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_headers_and_trailers"><a class="anchor" href="#_headers_and_trailers"></a>Headers and Trailers</h3>
+
+</div>
+<h1 id="_x12_isa" class="sect0"><a class="anchor" href="#_x12_isa"></a>X12 = ISA</h1>
+
+<h1 id="_edifact_una" class="sect0"><a class="anchor" href="#_edifact_una"></a>EDIFACT = UNA</h1>
+<div class="sect1">
+<h2 id="_x12_headers_and_trailers"><a class="anchor" href="#_x12_headers_and_trailers"></a>X12 Headers and Trailers</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>&#8230;&#8203;that a rule constitutes a legal obligation and that compliance is therefore required rather &gt; than merely optional .`" (Hart 1994)</p>
+<p>ISA Interchange Control Header
+  GS Functional Group Header
+    ST Transaction Set Header
+    SE Transaction Set Trailer
+  GE Functional Group Trailer
+IEA Interchange Control Trailer</p>
 </div>
-</blockquote>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+===
+If an ISA header is followed immediately by an IEA trailer, the interchange is empty. If a transaction set exists, the GS header and GE trailer must be present; otherwise, they are conditional.
+===
+</td>
+</tr>
+</table>
 </div>
+<div class="sect3">
+<h4 id="_isa"><a class="anchor" href="#_isa"></a>ISA</h4>
 <div class="paragraph">
-<p>Much is said about &#8220;equivalence&#8221; as it relates to the digitization of shipping documents.
-Such that the term &#8216;functionally equivalent&#8217; is used in the literature (Goldby 2012) to imply a sort of symmetry to these issues of physicality and possession.
-Our approach is radically different: we do not set out to provide for a symmetrical basis for all legal contracts, in fact, our system uses a devolved, that is to say, &#8220;federated&#8221;, a model of interlocking networks, and consortiums and a concept we call composability.
-Objectives</p>
+<p>The ISA interchange control header fields in an X12-encoded message are of fixed length. For some of the fields, you can enter a value less than the fixed length of the field. If you do so, the interchange must contain trailing spaces (for a string field) or leading zeroes (for a numerical field) so that each field is of the required length.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_gsa"><a class="anchor" href="#_gsa"></a>GSA</h4>
 <div class="paragraph">
-<p>(i) the promotion of certainty and predictability;
-(ii) the promotion of uniformity of application;
-(iii) the protection of democratic ideals and ensuring of jurisprudential deliberation, and;
-(iv) the retention of efficiency.</p>
+<p>The GS group header fields and the ST transaction set header fields are not of fixed length.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_st0"><a class="anchor" href="#_st0"></a>ST0</h4>
+<div class="paragraph">
+<p>The ST01 field is the transaction set ID Code; the ST02 field is the transaction set control number. The ST03 field is the schema version identifier. The SE01 field indicates the number of segments included in the transaction set; the SE02 field is the same as the ST02 field (the transaction set control number).</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_equivalence_vs_partial_equivalence"><a class="anchor" href="#_equivalence_vs_partial_equivalence"></a>Equivalence vs. Partial Equivalence</h2>
+<h2 id="_edifact_headers_and_trailers"><a class="anchor" href="#_edifact_headers_and_trailers"></a>EDIFACT Headers and Trailers</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We can determine that there lie two base units for the legal system through leximetric analysis, that is to say, there are units of obligatory execution and units of voluntary execution.
-This means that there are things you do on your own, and this that you do because you were coerced into doing or your agency has been impaired (e.g.
-imprisonment.
-We take these units (e.g.
-mechanisms for enforcement) and quantify them so that we may determine the necessary capabilities of specific EDI transaction Statement of Definitions transitive (the start of a chain of precedence relations must precede the end of the chain antisymmetric (no two different elements precede each other), reflexive (each element is comparable to itself)</p>
-</div>
-<div class="paragraph">
-<p>equivalence relation as defined mathematically;</p>
-</div>
-<div class="paragraph">
-<p>a = a (reflexive property) a = b then b = a a = b and b = c then a = c (transitive property)</p>
-</div>
-<div class="paragraph">
-<p>partial equivalence as defined mathematically aRb then bRa (symmetry)</p>
-</div>
-<div class="paragraph">
-<p>if aRb and bRc then aRc (transitivity)</p>
-</div>
-<h4 id="_classifying_legal_mechanisms_in_terms_of_mathematical_properties" class="discrete">Classifying legal mechanisms in terms of mathematical properties</h4>
-<div class="paragraph">
-<p>A similar approach applied for automating security audits So these Properties listed above are the &#8220;relations&#8221; of classification upon which we then determine how the legal obligations are arranged, which will then determine what it can do and can not do in the protocol.
-This portion of the protocol is called the &#8220;mapping engine&#8221;, and is one of the solutions that will enable global adoption, as it represents a legal parity, not a functionally equivalent contract.
-The Main Classifiers used in determining protocol capabilities are: Symmetry Transitivity Reflexive</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_additional_assessment_techniques_of_realizing_legal_parity"><a class="anchor" href="#_additional_assessment_techniques_of_realizing_legal_parity"></a>Additional Assessment Techniques of Realizing Legal Parity</h2>
-<div class="sectionbody">
-<h4 id="_leximetric_analysis" class="discrete">Leximetric Analysis</h4>
-<div class="paragraph">
-<p>When do drafters of legal instruments specify details and when do they not?
-(i) That statute length varies systematically across countries, partially controlling for substance;
-(ii) that other legal instruments, such as judicial opinions and contracts, are longer in countries with long statutes;
-and (iii) that both of the above are correlated with a large lawyer population.
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=456520" class="bare">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=456520</a> Metholodigcal</p>
-</div>
-<div class="paragraph">
-<p>System based design methodology in designing and understanding the legal implications of actions and which to give weight to.
-This list is basically a filter for determining which primitive is applicable to which law, i.e.
-this is part of the mapping engine we have developed.</p>
-</div>
-<div class="paragraph">
-<p>Legal Patterns for finding important laws We use the term &#8220;pattern&#8221; meaning relevant to our protocol, and &#8220;anti-pattern&#8221; to represent a more subjective interpretation or one that is hard to automate to determine should it be included or not.</p>
-</div>
-<div class="sect2">
-<h3 id="_patterns"><a class="anchor" href="#_patterns"></a>Patterns</h3>
-<div class="paragraph">
-<p>Law that addresses a problem that has not been defined Law that addresses a problem that no longer exists The law addresses more than one problem Law that has no stated purpose The language of the law is vague or complex Law is unable to achieve its stated goal</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_anti_patterns"><a class="anchor" href="#_anti_patterns"></a>Anti-Patterns</h3>
-<div class="paragraph">
-<p>Laws that address problems that have not been defined Laws that address problems that no longer exist Laws that address more than one problem in different domains Laws that lack a stated, measurable problem solving the goal, or purpose Laws that fail to achieve their goal or lack stated goals Laws that lack a citation of references Laws whose burdens are greater than their problem-solving benefit Laws whose problem-solving benefit and burdens are equal Laws whose results cannot be measured Laws that interfere with other laws Laws that duplicate other laws Requires Review Laws that are not enforced* Laws that violate human rights* Laws that are overly vague or complex* Laws that have not undergone QA analysis within a specified time frame Now that we have established legal patterns and a legal classified, we can begin to map out how these relationships present themselves, either by acting upon, being acted upon, events, etc.</p>
-</div>
-<div class="paragraph">
-<p><strong>Primitives Layer</strong> Primitives List of Legal Primitive Mechanisms PrimitiveEvent ExercisePrimitive AllocationPrimitive ContractFormationPrimitive ExecutionPrimitive InceptionPrimitive ObservationPrimitive QuantityChangePrimitive ResetPrimitive TermsChangePrimitive TransferPrimitive ExecutionPrimitive</p>
-</div>
-<div class="paragraph">
-<p>Specification of the primitive event for execution, with &#8216;after&#8217; state being an ExecutionState and the &#8216;before&#8217; state being Null.
-The &#8216;before&#8217; ExecutionState (0&#8230;&#8203;0) The 0 cardinality reflects the fact that there is no execution in the before the state of an execution primitive.
-Think of this as the &#8220;genesis&#8221; point.
-after ExecutionState The after state corresponds to the execution between the parties.
-In the case of execution on a contractual product, some additional characteristics may need to be specified to get a fully-formed contract, for instance when the executing party acts as an agent, as is the case in an allocation scenario.
-This is the purpose of the ContractFormation primitive event.</p>
+<p>UNA Service String Advice
+UNB Interchange Control Header
+  UNG Functional Group Header
+    UNH Message Header
+    UNT Message Trailer
+  UNE Functional Group Trailer
+UNZ Interchange Control Trailer</p>
 </div>
 <div class="sect3">
-<h4 id="_contractformationprimitive"><a class="anchor" href="#_contractformationprimitive"></a>ContractFormationPrimitive</h4>
+<h4 id="_una"><a class="anchor" href="#_una"></a>UNA</h4>
 <div class="paragraph">
-<p>@dev this design pattern is different in that it does not bundle together execution of the contract and formation of the contract, similar to the way a proxy contract works.
-The design pattern for this is to better provide for atomic primitives.
-Our purposes do not need such atomicity, as they are contractual products.
-ExecutionPrimitive + ContractFormationPrimitive = atomic financial primitive InceptionPrimitive = contractual product primitive [see jEDI contract below] Specification of the primitive event for the formation of a contract, with &#8216;before&#8217; state being an &#8216;ExecutionState&#8217; and &#8216;after&#8217; state being a &#8216;PostInceptionState&#8217;.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_allocationprimitive"><a class="anchor" href="#_allocationprimitive"></a>AllocationPrimitive</h4>
-<div class="paragraph">
-<p>The primitive event to represent a split/allocation of a trade.
-As part of this primitive event the type of trade, either execution or a contract, does not get altered.
-In the case of an execution, the further transformation of each split execution into a contract will be the purpose of the ContractFormation primitive.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_primitive_example"><a class="anchor" href="#_primitive_example"></a>Primitive Example</h4>
-<div class="paragraph">
-<p>example workflow of a contractual product condition ContractType: if AllocationPrimitive exists and before -&gt; execution exists then after -&gt; originalTrade -&gt; execution exists and after -&gt; allocatedTrade -&gt; execution exists and after -&gt; allocatedTrade -&gt; contract is absent condition ContractType: if AllocationPrimitive exists and before -&gt; contract exists then after -&gt; originalTrade -&gt; contract exists and after -&gt; allocatedTrade -&gt; contract exists and after -&gt; allocatedTrade -&gt; execution is absent</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_exerciseprimitive"><a class="anchor" href="#_exerciseprimitive"></a>ExercisePrimitive</h3>
-<div class="paragraph">
-<p>exerciseTiming which is deemed as associated to a request for exercise that is meant to take place, as opposed to the actual exercise event.
-Similar to how in FpML an OptionExercise is constructed.
-FpML 5.5 Inception Primitive The primitive event for the inception of a new contract between parties.
-Observation Primitive A class to specify the primitive object to specify market observation events, which is applicable across all asset classes.
-Quantity Change Primitive The primitive event represents a change in quantity or notional.
-Reset Primitive The primitive event represents a reset.
-Terms Change Primitive The primitive event represents change(s) to the contractual terms and the clearing submission and acceptance process.
-Transfer Primitive</p>
+<p>The UNA header is not required. The UNB header is required. If the UNA header is present, it contains the delimiters to use when processing the incoming message; otherwise the separators defined for the EfactDelimiters pipeline property will be used.</p>
 </div>
 <div class="paragraph">
-<p>A class to specify the transfer of assets between parties, those assets being either cash, securities, or physical assets (such as freight or an asset held by a bailee relationship such as warehouse receipts).
-This class combines components that are cross-assets (settlement date, settlement type, status, &#8230;&#8203;) and some other which are specialized by asset class (e.g.
-the payer/receiver amount and cashflow type for a cash transfer, the transferor/transferee, security indication, quantity, and asset transfer type qualification for the case of security).
-Workflow for Contractual Product (e.g.
-Forward Contracts)</p>
-</div>
-<div class="paragraph">
-<p>Example Workflow if WorkflowStep -&gt; businessEvent -&gt; primitives -&gt; inception -&gt; after -&gt; contract only exists &nbsp;then WorkflowStep -&gt; businessEvent -&gt; primitives -&gt; inception -&gt; after -&gt; contract else if WorkflowStep -&gt; businessEvent -&gt; primitives -&gt; quantityChange -&gt; after -&gt; contract exists &nbsp;
-&nbsp;then WorkflowStep -&gt; businessEvent -&gt; primitives -&gt; quantityChange -&gt; after -&gt; contract &nbsp;else WorkflowStep -&gt; businessEvent -&gt; primitives -&gt; inception -&gt; after -&gt; contract &nbsp;as "Contract"</p>
+<p>If a UNB header is followed immediately by a UNZ trailer, the interchange is empty. If a UNG header is followed immediately by a UNE trailer, the group is empty. The UNG header and UNE trailer pair are conditional and do not have to be present in a message.</p>
 </div>
 </div>
 </div>

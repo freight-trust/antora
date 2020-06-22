@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Design :: Freight Trust &amp; Clearing Omnibus</title>
+    <title>Operational Safeguards and Systems Continuity :: Freight Trust &amp; Clearing Omnibus</title>
     <meta name="generator" content="Antora 1.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
   </head>
@@ -369,81 +369,180 @@
   </div>
   <div class="content">
 <article class="doc">
-<h1 class="page">Design</h1>
+<h1 class="page">Operational Safeguards and Systems Continuity</h1>
 <div id="preamble">
 <div class="sectionbody">
+<h3 id="_topics" class="discrete">Topics;</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Systems development and quality assurance</p>
+</li>
+<li>
+<p>Systems operations</p>
+</li>
+<li>
+<p>Execution and Contract Behavior</p>
+</li>
+<li>
+<p>Business continuity-disaster recovery planning and resources;</p>
+</li>
+<li>
+<p>Capacity and performance planning;</p>
+</li>
+<li>
+<p>Exogenus Event Planning</p>
+</li>
+<li>
+<p>IT Security</p>
+</li>
+</ul>
+</div>
+<h3 id="_fail_safe_mechanism" class="discrete">Fail Safe Mechanism</h3>
 <div class="paragraph">
-<p>Focus of this
-Ignoring the consistency-latency tradeoff of replicated systems is a great oversight, since it is present at all times during system operation, whereas CAP is only relevant in the (arguably) rare case of a network partition. In fact, the consistency-latency tradeoff is potentially more significant than CAP, since it has a more direct effect of the baseline operations of modern distributed database systems.</p>
+<p>Smart contracts may not include appropriate or sufficient backup / failover mechanisms in case something goes awry.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Smart contracts may depend on other systems to fulfill contract terms.
+These other systems may have vulnerabilities that could prevent the smart contract from functioning as intended.</p>
+</li>
+<li>
+<p>Some smart contract platforms may be missing critical system safeguards and customer protections.</p>
+</li>
+<li>
+<p>Where smart contracts are linked to a blockchain, forks in the chain could create operational problems.</p>
+</li>
+<li>
+<p>In case of an operational failure, recourse may be limited or non-existent&#8201;&#8212;&#8201;complete loss of a virtual asset is possible.</p>
+</li>
+<li>
+<p>Poor governance.
+Smart contracts may require attention, action, and possible revision subject to appropriate governance and liability mechanisms.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"></input>Low Level Monotiroing of Deployed Contracts (e.g.
+QuickBlocks)</p>
+</li>
+<li>
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"></input>Failsafe mechanism to return to us in case of attack or error</p>
+</li>
+<li>
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"></input>Best Practices</p>
+</li>
+<li>
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"></input>Auditing by 3rd Party</p>
+</li>
+<li>
+<p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked"></input>Functional Lanaguage Approach to design (e.g.
+KVM)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>FailSafe Switch -</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_system_model_and_components"><a class="anchor" href="#_system_model_and_components"></a>System Model and Components</h2>
+<h2 id="_active_monitoring"><a class="anchor" href="#_active_monitoring"></a>Active Monitoring</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_network_components"><a class="anchor" href="#_network_components"></a>Network Components</h4>
-<div id="blockchain" class="paragraph">
-<p>The <strong>Blockchain</strong> serves as a global log of configuration and meta
-information. Through the blockchain component, network participants can register their existence along with verifiable data of
-their activities (such as schemas they use (e.g. X12 4010), service levels they guarantee (e.g. <a href="https://www.ogf.org/documents/GFD.107.pdf">Web Services Agreement Specification</a>, or contract terms with other participants). These transaction <strong>could</strong> used as input to automated arbitration of disputes per the guidelines setout in the <strong>Network Rulebook</strong>.</p>
-</div>
-<hr>
-<div id="publisher" class="paragraph">
-<p>[[nodelet: sequence, schedule, storage]]
----</p>
-</div>
-</div>
+
 </div>
 </div>
 <div class="sect1">
-<h2 id="_node_layers"><a class="anchor" href="#_node_layers"></a>Node Layers</h2>
+<h2 id="_smart_contract_monitoring"><a class="anchor" href="#_smart_contract_monitoring"></a><strong>Smart Contract Monitoring:</strong></h2>
 <div class="sectionbody">
-<div id="sequencing-layer" class="paragraph">
-<p>The sequencing layer (or “sequencer”) intercepts transactional inputs and
-places them into a global transactional input sequence—this sequence will be the order of
-transactions to which all replicas will ensure serial equivalence during their execution. The
-sequencer therefore also handles the replication and logging of this input sequence.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Actively monitor one (or more) Ethereum smart contracts and user accounts (or any combination) watching for odd or &#8216;known-dangerous&#8217; transactional patterns.
+Report to anomalies to a list of email, SMS, web site, or individuals whenever something of interest happens.</p>
+</li>
+</ul>
 </div>
-<div id="scheduling-layer" class="paragraph">
-<p>The scheduling layer (or “scheduler”) orchestrates transaction execution using
-a deterministic locking scheme to guarantee equivalence to the serial order specified by the
-sequencing layer while allowing transactions to be executed concurrently by a pool of transaction
-execution threads</p>
-</div>
-<div id="storage-layer" class="paragraph">
-<p>The storage layer handles all physical data layout.</p>
-</div>
-<div class="sect2">
-<h3 id="_sequencer_and_replication"><a class="anchor" href="#_sequencer_and_replication"></a>Sequencer and Replication</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">End Users:</th>
+<th class="tableblock halign-left valign-top">Smart contract developers, smart contract participants (i.e. token holders)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8216;Weird&#8217; things include recursive attacks, violations of invariants (token balances to ether balance), largest purchases, most active trader accounts, etc.;
+Could potentially spawn an &#8220;insured&#8221; smart contract industry expectation.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>[note]: epoch here does not mean the same as concensus epoch for validators</p>
+<p><strong>Smart Contract Reporting:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Instantaneous &#8220;Quarterly&#8221; reports available every second.
+On demand reports generated for cap tables (report on token holders), individual ether holdings and transaction histories (i.e.
+bank statements) on a per-account, per-contract-group, by industry, or system wide.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">End Users:</th>
+<th class="tableblock halign-left valign-top">Smart contract developers, smart contract participants (i.e. token holders), economists, regulators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allows for self-reporting on business processes, expenditures, and revenue from outside an organization&#8212;&#8203;no need to wait for company reports;
+marketing efforts might engender an expectation that every smart contract&#8217;s accounting is fully transparent.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Auditing Support:</strong></p>
 </div>
 <div class="paragraph">
-<p>10-second epochs during which every machine’s sequencer component collects transaction
-requests from clients. At the end of each epoch, all requests that have arrived at a sequencer node
-are compiled into a batch. This is the point at which replication of transactional inputs occurs.</p>
+<p>Provide data and transactional information to third parties not associated with the development team of a smart contract system.
+Interesting to potential investors, industry analysts, auditors and/or regulators.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_checkpointing"><a class="anchor" href="#_checkpointing"></a>Checkpointing</h3>
-<div class="paragraph">
-<p>Deterministic database systems have two properties that simplify the task of ensuring fault
-tolerance. First, active replication allows clients to instantaneously failover to another replica
-in the event of a crash. Second, only the transactional input is logged—there is no need to pay the
-overhead of physical REDO logging. Replaying history of transactional input is sufficient to recover
-the database system to the current state. However, it would be inefficient to replay the entire
-history of the database from the beginning of time upon every failure. Instead, the <strong>network
-operations</strong>* periodically takes a checkpoint of the network state in order to provide a starting point
-from which to begin replay during recovery. This is defined in the <a href="network.json">network configuration file</a>.</p>
-</div>
-<div class="sect3">
-<h4 id="_checkpoint_oracle"><a class="anchor" href="#_checkpoint_oracle"></a>Checkpoint Oracle</h4>
-<div class="paragraph">
-<p>see <a href="https://github.com/freight-trust/checkpoint">checkpoint oracle</a></p>
-</div>
-</div>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">End Users:</th>
+<th class="tableblock halign-left valign-top">regulators, auditors, potential investors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Note:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fully parsed data makes for much easier auditing of smart contracts, could expose non-delivery of promised behavior (i.e.
+are &#8220;provably true&#8221; gambling sites actually paying out at the rate they claim?
+Gambler Watch™).</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>
