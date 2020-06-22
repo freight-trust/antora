@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Transaction Pricing :: Freight Trust &amp; Clearing Omnibus</title>
+    <meta name="generator" content="Antora 1.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://freight-docs.netlify.app">Freight Trust &amp; Clearing Omnibus</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="Global Data Service Interchange" data-version="3.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="#"></a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/legal-parity.html">Rulebook</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/general.html">General</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/governance.html">Governance</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/network-clearing-participants.html">Network Participants</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/delivery-and-settlement.html">Delivery & Settlement</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/obligations.html">Obligations</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/suspension.html">Suspension</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Supply Chain</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/bill-of-lading-rules.html">Bills of Lading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/non-negotiable-bol.html">Non Negotiable BOL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/customs/customs-broker-power-of-attorney.html">Customs & Freight Forwarders</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/incoterms.html">INCO Terms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/non-negotiable-warehouse-receipts.html">Warehouse Receipts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/856.html">EDI 856</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/blockchain/token-overview.html">Blockchain Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/contracts-v1.html">Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Pricing Model</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/staking.html">Token Staking & Mechanics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/network-upgrade.html">Network Upgrading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/add-metamask.html">Wallets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Updating-Whitelists.html">Whitelists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">Primitive Protocol Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Account-Management.html">Account Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Protocol Axioms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/explain-edi.html">EDI Explainer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/network-design.html">Network Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/vbsm.html">VBSM Methodology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-practices.html">Smart Contract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/smart-contract-dev.html">Smart Contract Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/adr.html">ADR Template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Pricing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/transaction-pricing.html">Transaction Pricing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/pricing-spec-precedence.html">Pricing Specification Precedence</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Token Pricing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/eas2.html">Enterprise</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/message-structure.html">Accepted Message Structures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/as2protocol.html">Gateway</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">B2B Message Protocols</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/edi-x12.html">X12/EDIFACT Interchange</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/x12-parser.html">X12/EDIFACT Parser</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/engineering.html">Engineering & Operations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/defects.html">Defects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-dev.html">Smart Contract Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Corporate</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/document-retention-policy.html">Document Retention Policy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/bylaws.html">Corporate Bylaws</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/GPL-cooperation-commitment.html">GPL Cooperation Commitment</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/privacy-policy.html">Code of Conduct</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/ccpa.html">CCPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Whitepapers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">CDM</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">Design Considerations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/message-design.html">Message Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/grammar/index.html">Leximatic Grammer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/similarities-to-existing-regulatory-frameworks.html">Comparision to other Frameworks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Axioms</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Omnibus</span>
+    <span class="version">1.4.5</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">EDI Service Bus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="#">3.1.0</a>
+        </li>
+        <li class="version">
+          <a href="#">3.0.0</a>
+        </li>
+        <li class="version">
+          <a href="rulebook/general.html"></a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Omnibus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="https://github.com/freight-chain">1.4.5</a>
+        </li>
+        <li class="version is-current">
+          <a href="#">1.4.5</a>
+        </li>
+        <li class="version">
+          <a href="#">2.0.7</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Customs Interface</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="tradedocs.html">USA</a>
+        </li>
+        <li class="version">
+          <a href="#">CA</a>
+        </li>
+        <li class="version">
+          <a href="#">JPY</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li>Freight Trust & Clearing</li>
+    <li><a href="#">Omnibus</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="http://github.com/freight-trust/antora">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Transaction Pricing</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div id="source" class="paragraph">
+<p><a href="http://www.tpc.org/tpcc/">transaction processing council</a>
+<a href="http://www.tpc.org/tpc_documents_current_versions/pdf/pricing_v2.5.0.pdf">v2.5.0, pdf</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pricing_terms"><a class="anchor" href="#_pricing_terms"></a>Pricing Terms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[Archive Operation Requirement] - The period of time for which data generated by the Priced
+Configuration as required by the benchmark specification must be maintained in on-line storage.</p>
+</div>
+<div class="paragraph">
+<p>[Available] – The Line Item is Orderable and shipping to Customers in the Priced Locale.</p>
+</div>
+<div class="paragraph">
+<p>[Availability Date] - The date when all Line Items of the Priced Configuration are Generally
+Available.</p>
+</div>
+<div class="paragraph">
+<p>[Benchmark Special Pricing] - A price that is submitted for publication that uses methods or
+values that would not likely be found in an actual Purchase Agreement with a Customer</p>
+</div>
+<div class="paragraph">
+<p>[Commercially Available Product] - A product that:
+1. Is Orderable,
+2. Is maintained as defined in this specification,
+3. Has a non-zero price for at least one of purchase, license or maintenance support, and
+4. Is designed for Customer uses other than running the benchmark.</p>
+</div>
+<div class="paragraph">
+<p>[Orderable] - A method exists for the specified Sales Channel and a Customer to establish a
+Purchase Agreement for the product at a specific price.</p>
+</div>
+<div class="paragraph">
+<p>[Part Number] - An alphanumeric string used by a supplier to uniquely identify a Line Item of a
+Priced Configuration. The Sales Channel should be able to identify the Line Item by the Part
+Number when generating a price.</p>
+</div>
+<div class="paragraph">
+<p>[Physically Acquired] - The one-time purchase of the Priced Configuration to be installed on a
+customer’s premises, i.e. on-prem.</p>
+</div>
+<div class="paragraph">
+<p>[Pre-Publication Board] - The Pre-Publication Board as defined by the TPC Policies.
+[Price Performance] – The ratio of the Total Price over the primary metric for performance, as
+defined by the Benchmark Standard.</p>
+</div>
+<div class="paragraph">
+<p>[Priced Configuration]- The Line Items to be priced as defined in the Benchmark Standard.</p>
+</div>
+<div class="paragraph">
+<p>[Priced Currency] – A currency that a Customer commonly uses in the Priced Locale. The Priced
+Currency must be identified by an ISO Currency Code.
+[NOTE] The intent is the Priced Currency is one commonly used in the Priced Locale.</p>
+</div>
+<div class="paragraph">
+<p>[Priced Locale] – The geographical area where the entire Priced Configuration, including all Line
+Items and associated maintenance, are Generally Available in the Priced Currency(s) and from
+the documented Pricing Sources.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing] - The methods and documentation used to obtain a Total Price for the Priced
+Configuration</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Convention] - The algorithm or process used by a vendor to set or compute prices. There
+can be many Pricing Conventions within a single vendor pertaining to the same products or
+group of products. Pricing Conventions are often aimed at specific markets.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Methodology ]- The methodology to be used to calculate the price and the
+price/performance Result of the Benchmark Standard.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Model] – A representation of the relationship between the Regions used for the driver
+and System Under Test in both the Measured Configuration and the Priced Configuration.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Period] – The period of time for which the pricing of all hardware (purchase price),
+software (license charges), Licensed Compute Services, and hardware/software maintenance
+must be priced. The Pricing Period must be defined in the Benchmark Standard.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Source] - A group or individual that would normally generate a price quotation for the
+Sales Channel specified in the FDR. For example, if the Sales Channel is a web-based tool that
+automatically generated a price quotation, then the Pricing Source is that tool.</p>
+</div>
+<div class="paragraph">
+<p>[Pricing Spreadsheet] - The Pricing Spreadsheet is a table that lists the individually priced Line
+Items of the Priced Configuration, including the Pricing Source of the price, quantities, the
+computation of extended price, maintenance, and any applied Discounts.</p>
+</div>
+<div class="paragraph">
+<p>[Region] – An area defined by the Line Item provider.</p>
+</div>
+<div class="paragraph">
+<p>[List Price] - The price, stated in a Priced Currency, for which any Customer could purchase one
+unit of a Line Item from a Sales Channel without any other purchase (other than specific
+prerequisite or other required products that are documented in association with the product).</p>
+</div>
+<div class="paragraph">
+<p>[Field Replaceable Unit (FRU)] - A Component of the Priced Configuration that must be
+removed and/or installed by personnel of the maintenance provider.
+Fix - Any resolution (including “workarounds”) that restores the Customer’s Application to
+normal operation.</p>
+</div>
+<div class="paragraph">
+<p>[Formatted Capacity] - the capacity of a durable media device as defined by the manufacturer of
+the device.</p>
+</div>
+<div class="paragraph">
+<p>[Response Time for Problem Recognition] - The period of time it takes from Customer request
+until an active process is underway to classify the problem and, if it is at a level that would qualify
+as a Failure in this document, initiate the isolation and eventual resolution of the problem. There
+must be ownership of the problem. Simply having it in a queue is not sufficient. Direct
+interaction with the Customer or their computer must underway. The resumption of Customer
+operations need not be guaranteed within the response period.</p>
+</div>
+<div class="paragraph">
+<p>[Generally Available] - A product is Available to any Customer.</p>
+</div>
+<div class="paragraph">
+<p>[ISO Currency Code] – An officially recognized ISO 4217 currency identified by a 3-letter currency
+code. The ISO codes for each currency can be obtained from the Internet or the TPC
+Administrator.</p>
+</div>
+<div class="paragraph">
+<p>[Licensed Compute Services] - Publicly offered processing, storage, network, and software services
+that are hosted on remote computer servers accessed via a Wide Area Network (e.g. the Internet).
+A Customer pays a license fee to the Licensed Compute Services vendor for the use of the
+processing, storage, network, and software services. The Licensed Compute Services are not
+located or installed on a customer&#8217;s premises.</p>
+</div>
+<div class="paragraph">
+<p>[Discount] - A reduction in price, stated in a Priced Currency, from the List Price of a Line Item or
+group of Line Items.</p>
+</div>
+<div class="paragraph">
+<p>[Failure] - A condition that prevents the system under test from performing benchmark operations
+at the performance and functional levels required by the Benchmark Standard and claimed in the
+FDR.</p>
+</div>
+<div class="paragraph">
+<p>[Full Disclosure Report (FDR)] - See definition in official TPC Policies document.</p>
+</div>
+<div class="paragraph">
+<p>[Field Replaceable Unit (FRU)] - A Component of the Priced Configuration that must be
+removed and/or installed by personnel of the maintenance provider.</p>
+</div>
+<div class="paragraph">
+<p>[Component] – A product, Licensed Compute Service, maintenance, or license without any specific
+relationship to whether it is a specific Line Item. For example, a power cord is a Component that
+may be separately priced as a Line Item with a Part Number or may be included in the price of a
+larger Component.</p>
+</div>
+<div class="paragraph">
+<p>[Continuous Operation Requirement] - The period of time when the Priced Configuration must
+be able to support the full operation at the performance levels claimed in the Benchmark
+Standard.
+[Conversion Rate] – The conversion ratio between two ISO Currencies on a given date, as
+published by the Currency Conversion Source.</p>
+</div>
+<div class="paragraph">
+<p>[Currency Conversion] – The conversion of a monetary amount from a Priced Currency to the
+Primary Currency using the associated Conversion Rate.</p>
+</div>
+<div class="paragraph">
+<p>[Currency Conversion Source] – The TPC approved source for calculating all currency Conversion
+Rates. The Currency Conversion Source and the process for determining the Conversion Rate
+can be obtained from the TPC Administrator.</p>
+</div>
+<div class="paragraph">
+<p>[Customer] - Any individual or business, in the Priced Locale, that could plausibly and legally
+purchase the products listed in the FDR.</p>
+</div>
+<div class="paragraph">
+<p>[Customer Application] - The Customer written software required to implement the TPC
+Benchmark workload.</p>
+</div>
+<div class="paragraph">
+<p>[Customer Replaceable Unit (CRU)] - A Component of the Priced Configuration that can be
+removed and installed by the customer. CRUs may be serviced as if they are FRUs.
+Defect - A behavior of the system that prevents the normal operation of the Customer’s
+Application.</p>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
