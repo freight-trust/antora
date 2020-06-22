@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ADR template for business case :: Freight Trust &amp; Clearing Omnibus</title>
+    <meta name="generator" content="Antora 1.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://freight-docs.netlify.app">Freight Trust &amp; Clearing Omnibus</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="Global Data Service Interchange" data-version="3.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="#"></a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/legal-parity.html">Rulebook</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/general.html">General</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/governance.html">Governance</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/network-clearing-participants.html">Network Participants</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/delivery-and-settlement.html">Delivery & Settlement</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/obligations.html">Obligations</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/suspension.html">Suspension</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Supply Chain</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/bill-of-lading-rules.html">Bills of Lading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/non-negotiable-bol.html">Non Negotiable BOL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/customs/customs-broker-power-of-attorney.html">Customs & Freight Forwarders</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/incoterms.html">INCO Terms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/non-negotiable-warehouse-receipts.html">Warehouse Receipts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/856.html">EDI 856</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/blockchain/token-overview.html">Blockchain Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/contracts-v1.html">Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Pricing Model</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/staking.html">Token Staking & Mechanics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/network-upgrade.html">Network Upgrading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/add-metamask.html">Wallets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Updating-Whitelists.html">Whitelists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">Primitive Protocol Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Account-Management.html">Account Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Protocol Axioms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/explain-edi.html">EDI Explainer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/network-design.html">Network Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/vbsm.html">VBSM Methodology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-practices.html">Smart Contract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/smart-contract-dev.html">Smart Contract Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/adr.html">ADR Template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Pricing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/transaction-pricing.html">Transaction Pricing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/pricing-spec-precedence.html">Pricing Specification Precedence</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Token Pricing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/eas2.html">Enterprise</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/message-structure.html">Accepted Message Structures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/as2protocol.html">Gateway</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">B2B Message Protocols</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/edi-x12.html">X12/EDIFACT Interchange</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/x12-parser.html">X12/EDIFACT Parser</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/engineering.html">Engineering & Operations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/defects.html">Defects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-dev.html">Smart Contract Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Corporate</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/document-retention-policy.html">Document Retention Policy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/bylaws.html">Corporate Bylaws</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/GPL-cooperation-commitment.html">GPL Cooperation Commitment</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/privacy-policy.html">Code of Conduct</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/ccpa.html">CCPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Whitepapers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">CDM</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">Design Considerations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/message-design.html">Message Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/grammar/index.html">Leximatic Grammer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/similarities-to-existing-regulatory-frameworks.html">Comparision to other Frameworks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Axioms</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Omnibus</span>
+    <span class="version">1.4.5</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">EDI Service Bus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="#">3.1.0</a>
+        </li>
+        <li class="version">
+          <a href="#">3.0.0</a>
+        </li>
+        <li class="version">
+          <a href="rulebook/general.html"></a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Omnibus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="https://github.com/freight-chain">1.4.5</a>
+        </li>
+        <li class="version is-current">
+          <a href="#">1.4.5</a>
+        </li>
+        <li class="version">
+          <a href="#">2.0.7</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Customs Interface</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="tradedocs.html">USA</a>
+        </li>
+        <li class="version">
+          <a href="#">CA</a>
+        </li>
+        <li class="version">
+          <a href="#">JPY</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li>Freight Trust & Clearing</li>
+    <li><a href="#">Omnibus</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="http://github.com/freight-trust/antora">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">ADR template for business case</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This ADR template emphasizes creating a business case for a decision, including critera, candidates, and costs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_top_level"><a class="anchor" href="#_top_level"></a>Top-level</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Status</p>
+</li>
+<li>
+<p>Evaluation criteria</p>
+</li>
+<li>
+<p>Candidates to consider</p>
+</li>
+<li>
+<p>Research and analysis of each candidate</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Does/doesn&#8217;t meet criteria and why</p>
+</li>
+<li>
+<p>Cost analysis</p>
+</li>
+<li>
+<p>SWOT analysis</p>
+</li>
+<li>
+<p>Opinions and feedback</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Recommendation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_low_level_deep_dive"><a class="anchor" href="#_low_level_deep_dive"></a>Low-level deep dive</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Title</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A short present tense imperative phrase, less than 50 characters, like a git commit message.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Status</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>One of proposed, accepted, rejected, deprecated, superseded, etc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Evaluation criteria</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary: explain briefly what we seek to discover and why.</p>
+</li>
+<li>
+<p>Specifics</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Candidates to consider</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary: explain briefly how we discovered candidates, and draw attention to any outliers.</p>
+</li>
+<li>
+<p>List all candidates and related options; what are we evaluating as potential solutions?</p>
+</li>
+<li>
+<p>Specifics</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Research and analysis of each candidate</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary: explain briefly the research methods, and draw attention to patterns, clusters, and outliers.</p>
+</li>
+<li>
+<p>Does/doesn&#8217;t meet criteria and why</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Specifics</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Cost analysis</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Examples</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Licensing, such as contract agreements and legal commitments</p>
+</li>
+<li>
+<p>Training, such as upskilling and change management</p>
+</li>
+<li>
+<p>Operating, such as support and maintenance</p>
+</li>
+<li>
+<p>Metering, such as bandwidth and CPU usage</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>SWOT analysis</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Strengths</p>
+</li>
+<li>
+<p>Weaknesses</p>
+</li>
+<li>
+<p>Opportunites</p>
+</li>
+<li>
+<p>Threats</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Internal opinions and feedback</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Examples</p>
+<div class="ulist">
+<ul>
+<li>
+<p>By the team, ideally written by the actual person</p>
+</li>
+<li>
+<p>From other stakeholders</p>
+</li>
+<li>
+<p>Quality attributes a.k.a. cross-functional requirements</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>External opinions and feedback</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Who is providing the opinion?</p>
+</li>
+<li>
+<p>What are other candidates you considered?</p>
+</li>
+<li>
+<p>What are you creating?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Examples</p>
+<div class="ulist">
+<ul>
+<li>
+<p>B2B or B2C</p>
+</li>
+<li>
+<p>external-facing or employee-only</p>
+</li>
+<li>
+<p>desktop or mobile</p>
+</li>
+<li>
+<p>pilot or production</p>
+</li>
+<li>
+<p>monolith or microservices</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>How did you evaluate the candidates?</p>
+</li>
+<li>
+<p>Why did you choose the winner?</p>
+</li>
+<li>
+<p>What is happening since then?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Examples</p>
+<div class="ulist">
+<ul>
+<li>
+<p>How is the winner performing?</p>
+</li>
+<li>
+<p>What % of real-world production user traffic is flowing through the winner?</p>
+</li>
+<li>
+<p>What kinds of integrations are involved, such as with continuous delivery pipelines, content management systems, analytics and metrics, etc.?</p>
+</li>
+<li>
+<p>Knowing what you know now, what would you advise people to do differently?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Anecdotes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Specifics</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
