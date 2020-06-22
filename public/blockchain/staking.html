@@ -401,23 +401,62 @@
 </td>
 <td class="content">
 <div class="title">Smart Contract Overview</div>
-===
-We are in the process of migrating from markdown into asciidoc, styling may not render properly
-===
+<div class="paragraph">
+<p>We are in the process of migrating from markdown into asciidoc, styling may not render properly</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>| Contract | Description |
-| --- | --- |
-| Staking Contract | An upgradeable contract that implements staking  |
-| Staking Proxy | Stores staking state and delegates to the Staking Contract |
-| <strong>Registry</strong> | Enables Pools to form that users may wish to delegate |
-| <strong>Registry</strong> | Enables Pools to form that users may wish to delegate |
-| $EDI Vault | Securely holds staked $EDI Tokens |
-| $EDI Treasury | Securely holds $EDI Tokens for payouts |</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staking Contract</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An upgradeable contract that implements staking</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staking Proxy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stores staking state and delegates to the Staking Contract</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Registry</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables Pools to form that users may wish to delegate</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Registry</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables Pools to form that users may wish to delegate</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$EDI Vault</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Securely holds staked $EDI Tokens</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$EDI Treasury</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Securely holds $EDI Tokens for payouts</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="payout-formula"><a class="anchor" href="#payout-formula"></a>Payout Formula</h3>
@@ -436,17 +475,60 @@ We are in the process of migrating from markdown into asciidoc, styling may not 
 <pre>$$  r=R \times\left(\frac{f}{F}\right)^{\alpha} \times\left(\frac{d}{D}\right)^{1-a}  $$</pre>
 </div>
 </div>
-<div class="paragraph">
-<p>| Term | Definition |
-| --- | --- |
-| <em>r</em> | Reward for a specific pool. |
-| <em>R</em> | Total reward to be split between all pools. |
-| <em>f</em> | Total fees earned by the pool during a specific rotation period/epoch. |
-| <em>F</em> | Total fees earned across all (staked) pools this epoch. |
-| <em>d</em> | Total weighted $EDI staked by the pool this epoch. |
-| <em>D</em> | Total weighted $EDI staked across all (active) pools this epoch. |
-| <em>α</em> | A constant in the range \[0..1\] that determines the weight of fees vs stake. |</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Term</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>r</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reward for a specific pool.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>R</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total reward to be split between all pools.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>f</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total fees earned by the pool during a specific rotation period/epoch.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>F</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total fees earned across all (staked) pools this epoch.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>d</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total weighted $EDI staked by the pool this epoch.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>D</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total weighted $EDI staked across all (active) pools this epoch.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>α</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A constant in the range \[0..1\] that determines the weight of fees vs stake.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="basic-functionalities"><a class="anchor" href="#basic-functionalities"></a>Basic Functionalities</h3>
@@ -562,10 +644,6 @@ We are in the process of migrating from markdown into asciidoc, styling may not 
 </div>
 <div class="sect2">
 <h3 id="payout-estimator"><a class="anchor" href="#payout-estimator"></a>Payout Estimator</h3>
-
-</div>
-<div class="sect2">
-<h3 id="terms-and-conditions"><a class="anchor" href="#terms-and-conditions"></a>Terms and Conditions</h3>
 
 </div>
 </div>
