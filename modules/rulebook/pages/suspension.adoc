@@ -1,10 +1,7 @@
+/* Attribution-NonCommercial-NoDerivs 2.5
+ * https://spdx.org/licenses/CC-BY-NC-ND-2.5.html 
+ * (C) 2020 FreightTrust and Clearing Corporation */
 = Disciplinary & Suspension
-:url-project: https://freighttrust.com
-:url-docs: https://docs.freighttrust.com
-:url-org: https://github.com/freight-chain
-:url-group: {url-org}/rulebook
-:url-site-readme: {url-group}/docs-site/blob/master/README.adoc
-:url-freight: https://freighttrust.com
 :idprefix:
 :idseparator: -
 :!example-caption:
@@ -17,7 +14,7 @@
 == Suspension and Disciplinary Proceedings
 
 
-=== General
+=== *General*
 
 (A).
 The Board, Risk Management Committee, or any Exchange Committee may summarily suspend any Clearing Participant
@@ -91,17 +88,17 @@ A Clearing Participant suspended pursuant to Rule 601 shall be entitled, upon re
 
 ....
 (A). Before any sanction is imposed pursuant to Rule 603, FreightTrust Clearing shall furnish the person against whom the sanction is sought to be imposed (“Respondent”) with a concise written statement of the charges against the Respondent. The Respondent shall have ten Business Days after the service of such statement to file with FreightTrust Clearing a written answer thereto. The answer shall admit or deny each allegation contained in the statement of charges and may also contain any defense which the Respondent wishes to submit. Allegations contained in the statement of charges which are not denied in the answer shall be deemed to have been admitted, and any defense not raised in the answer shall be deemed to have been waived. If an answer is not filed within the time prescribed above or any extension thereof granted pursuant to paragraph (d) of this Rule, the allegations contained in the statement of charges shall be deemed to have been admitted, and the sanction specified in the final request shall be imposed without further proceedings and the Respondent shall be notified thereof in writing. If an answer is timely filed, FreightTrust Clearing shall (unless the Respondent and FreightTrust Clearing shall have stipulated to the imposition of an agreed sanction) schedule a hearing before the Disciplinary Panel. The Respondent shall be given not less than  three Business Days advance notice of the place and time of such hearing. At the hearing, the Respondent shall be afforded the opportunity to be heard and to present evidence in its behalf and may be represented by counsel. A record of the hearing shall be prepared and the cost of the transcript may, in the discretion of the Disciplinary Panel, be charged in whole or in part to the Respondent in the event any sanction is imposed on the Respondent. As soon as practicable after the conclusion of the hearing, the Disciplinary Panel shall furnish the Respondent and the Board with a written statement of its decision. If the decision shall have been to impose a disciplinary sanction, the written statement shall set forth
-
+	
 	(i) any act or practice in which the Respondent has been found to have engaged, or which the Respondent has been found to have omitted;
-
+	
 	(ii) the specific provisions of the Rules which any such act, practice or omission has been deemed to violate; and
-
+	
 	(iii) the sanction imposed and the reasons therefor.
 
 (B). In the event that (i) the Disciplinary Panel censures, fines, suspends, expels or limits the activities, functions or operations of a Respondent, or (ii) determines not to impose any disciplinary measures on a Respondent, the Respondent, in the case of (i) above, or the President, in the case of (ii) above, may apply for review to the Board, by written motion filed with FreightTrust Clearing within five Business Days after issuance of the Disciplinary Panel’s written statement of its decision.
 
 (C). The granting of any such motion shall be within the discretion of the Board. In addition, the Board may determine to review any such action by the Disciplinary Panel on its own motion. Review by the Board shall be on the basis of the written record of the proceedings in which the sanction was imposed, but the Board may, in its discretion, afford the Respondent a further opportunity to be heard or to present evidence. A record shall be kept of any such further proceedings. Based upon such review, the Board may affirm, reverse or modify, in whole or in part, the decision of the Disciplinary Panel. The Respondent shall be notified in writing of the decision of the Board and if the decision shall have been to affirm or modify the imposition of any disciplinary sanction, the Respondent shall be given a written statement setting forth
-
+	
 	(i) any act or practice in which the Respondent has been found to have engaged, or which the Respondent has been found to have omitted;
 	(ii) the Rules which any such act, practice or omission has been deemed to violate; and
 	(iii) the sanction imposed and the reasons therefor.
@@ -131,6 +128,6 @@ A Clearing Participant suspended pursuant to Rule 601 shall be entitled, upon re
 	(iii) Limit or restrict the number of Contracts that are permitted to be maintained by such Clearing Participant in any of its Accounts with FreightTrust Clearing;
 
 	(iv) Decline to accept new trades or positions in Contracts for the Accounts of the Clearing Participant;
-
+	
 	(v) Increase such Clearing Participant’s Margin requirements and/or require such Clearing Participant to deposit the same in cash or Eligible Securities in proportions different than those that are applicable to Clearing Participants generally;
 ....

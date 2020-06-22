@@ -1,29 +1,29 @@
-= Network Rulebook
+= Freight Trust & Clearing
 :url-project: https://freighttrust.com
 :url-docs: https://docs.freighttrust.com
 :url-org: https://github.com/freight-chain
 :url-group: {url-org}/rulebook
 :url-site-readme: {url-group}/docs-site/blob/master/README.adoc
 :url-freight: https://freighttrust.com
-:idprefix:
-:idseparator: -
-:!example-caption:
-:!table-caption:
-:page-pagination:
 
-:doctype: book
+Global Registry
 
-== Network Rulebook
+* Omnibus/Documentation
+Documentation on system architecture, benchmarking, security, protocol and business logic.
 
-This rulebook governs and provides instructions for the adjudication, regulation and governance over the Freight Trust Network. Additional details are located in the {url-site-readme}[Omnibus Documentation].
+* Omnibus/Rulebook
+Rulebook governs and provides instructions for the adjudication, regulation and governance over the Freight Trust Network. Additional details are located in the {url-site-readme}[Omnibus Documentation].
 
-=== Resources
+* Omnibus/Corporate
+Corporate directory
+
+== Resources
 
 * {url-project}[Freight Trust & Clearing]
 * {url-docs}[Omnibus Docs]
 * {url-org}[Network Repositories]
 
-=== Copyright and License
+== Copyright and License
 
 Copyright (C) 2020 FreightTrust & Clearing Corporation
 
