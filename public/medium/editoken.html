@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>$EDI Token &amp; Nodes :: Freight Trust &amp; Clearing Omnibus</title>
+    <meta name="generator" content="Freight Trust1.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://freight-docs.netlify.app">Freight Trust &amp; Clearing Omnibus</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://freighttrust.com">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://freight.page.link/demo">EDI/B2B Messaging</a>
+            <a class="navbar-item" href="https://freight.page.link/demo">Trade and Compliance</a>
+            <a class="navbar-item" href="https://freight.page.link/demo">Trade Finance</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">FAQ</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Wallet</a>
+            <a class="navbar-item" href="#">EDI Messages</a>
+            <a class="navbar-item" href="#">EDI Token</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/freight-chain">GitHub</a>
+            <a class="navbar-item" href="https://gitlab.com/freight-trust">GitLab</a>
+            <a class="navbar-item" href="https://docker.com/freightcorp">Docker</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://github.com/freight-chain/network">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="Global Data Service Interchange" data-version="3.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="#"></a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/legal-parity.html">Rulebook</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/general.html">General</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/governance.html">Governance</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/network-clearing-participants.html">Network Participants</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/delivery-and-settlement.html">Delivery & Settlement</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/obligations.html">Obligations</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/suspension.html">Suspension</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Supply Chain</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/bill-of-lading-rules.html">Bills of Lading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/non-negotiable-bol.html">Non Negotiable BOL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/customs/customs-broker-power-of-attorney.html">Customs & Freight Forwarders</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/incoterms.html">INCO Terms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/non-negotiable-warehouse-receipts.html">Warehouse Receipts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/856.html">EDI 856</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/blockchain/token-overview.html">Blockchain Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/contracts-v1.html">Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Pricing Model</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/staking.html">Token Staking & Mechanics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/network-upgrade.html">Network Upgrading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/add-metamask.html">Wallets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Updating-Whitelists.html">Whitelists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">Primitive Protocol Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Account-Management.html">Account Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Protocol Axioms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/explain-edi.html">EDI Explainer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/network-design.html">Network Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/vbsm.html">VBSM Methodology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-practices.html">Smart Contract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/smart-contract-dev.html">Smart Contract Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/adr.html">ADR Template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Pricing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/transaction-pricing.html">Transaction Pricing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/pricing-spec-precedence.html">Pricing Specification Precedence</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Token Pricing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/eas2.html">Enterprise</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/message-structure.html">Accepted Message Structures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/as2protocol.html">Gateway</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">B2B Message Protocols</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/edi-x12.html">X12/EDIFACT Interchange</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/x12-parser.html">X12/EDIFACT Parser</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/engineering.html">Engineering & Operations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/defects.html">Defects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-dev.html">Smart Contract Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Corporate</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/document-retention-policy.html">Document Retention Policy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/bylaws.html">Corporate Bylaws</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/GPL-cooperation-commitment.html">GPL Cooperation Commitment</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/privacy-policy.html">Code of Conduct</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/ccpa.html">CCPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Whitepapers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">CDM</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/util.html">Design Considerations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/message-design.html">Message Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/grammar/index.html">Leximatic Grammer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/similarities-to-existing-regulatory-frameworks.html">Comparision to other Frameworks</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Axioms</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Omnibus</span>
+    <span class="version">1.4.5</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">EDI Service Bus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="#">3.1.0</a>
+        </li>
+        <li class="version">
+          <a href="#">3.0.0</a>
+        </li>
+        <li class="version">
+          <a href="rulebook/general.html"></a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Omnibus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="https://github.com/freight-chain">1.4.5</a>
+        </li>
+        <li class="version is-current">
+          <a href="#">1.4.5</a>
+        </li>
+        <li class="version">
+          <a href="#">2.0.7</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Customs Interface</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="tradedocs.html">USA</a>
+        </li>
+        <li class="version">
+          <a href="#">CA</a>
+        </li>
+        <li class="version">
+          <a href="#">JPY</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li>Freight Trust & Clearing</li>
+    <li><a href="#">Omnibus</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="http://github.com/freight-trust/antora">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">$EDI Token &amp; Nodes</h1>
+<div class="sect1">
+<h2 id="_in_brief"><a class="anchor" href="#_in_brief"></a>In brief</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We adopt a “cryptoasset” pricing model, evaluate our current token model, and propose several changes in order to maximize value accrual as the network opens for public (i.e. business) usage. Much of this work is based on sources found at the end, and we would like to thank everyone who offered their critiques and thoughts on the subject.</p>
+</div>
+<div class="paragraph">
+<p>Examining the “bifurcated” token model (having 2 tokens: a transactional token (network native) and a “system” token (erc-20) is shown to be a better model than a traditional singular token model.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_protocol"><a class="anchor" href="#_protocol"></a>Protocol</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>On Protocols</p>
+<div class="quoteblock">
+<blockquote>
+"Protocols encode the rules of engagement that coordinate the exchange of a service between a global supplier and global consumer."
+</blockquote>
+<div class="attribution">
+&#8212; Chris Burniske<br>
+<cite>Protocols As Minimally Extractive Coordinators</cite>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Protocols provide structure for businesses, but are not businesses themselves; they are systems of logic that coordinate exchange between suppliers (businesses) and consumers of a service. As coordinators of exchange, protocols should be minimally extractive, whereas businesses are incentivized to be maximally extractive (that’s profit, and a business is valued as a multiple of its profit).
+The ERC-20 token, $EDI, acts as a right to receive the native network asset, xEDI on demand. xEDI does not act as a right to receive any other asset, instead, it grants the right to transact on the network-based upon market conditions and pricing. This does not preclude a trading mechanism from existing: we simply enforce a one-way mechanism for EDI to xEDI.</p>
+</div>
+<div class="sect2">
+<h3 id="_nodes_and_nodlets"><a class="anchor" href="#_nodes_and_nodlets"></a>Nodes and Nodlets</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>1 Validator has 3 Nodlets making the total of 4 "containers"/"servers"</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Gmemory</th>
+<th class="tableblock halign-left valign-top">3</th>
+<th class="tableblock halign-left valign-top">Paid for every additional word when expanding memory.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gtxcreate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paid by all contract-creating transactions after the Homestead transition.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gtxdatazero</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paid for every zero byte of data or code for a transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gtxdatanonzero</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paid for every non-zero byte of data or code for a transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gtransaction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paid for every transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ext4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4096</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bytes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EDI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">message</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tthroughput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tx/s</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Block Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8294400</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">552960</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bytes per block</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">552.96</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kilo bytes per block</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">checkpoint increment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rocksdb</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3860</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">epoch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22118400</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_nodes"><a class="anchor" href="#_nodes"></a>Nodes</h4>
+<div class="paragraph">
+<p>Masternodes == Nodes. All nodes are technically the same. The classifications below are more specifically <code>slots</code>. Nodes are rotated into different <code>slot positions</code> over an <code>epoch</code>. An <code>epoch</code> is defined in terms of <code>checkpoint increment</code>
+authority: concensus signing node
+validator:
+failover
+==== Nodlet
+besu-tx: Handling of local transaction pool.
+besu-sync: Handling of blockchain synchronisation through Ethereum P2P network.
+besu-query: Handling of database queries.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_threshold_utility_level"><a class="anchor" href="#_threshold_utility_level"></a>Threshold Utility Level</h3>
+<div class="paragraph">
+<p>The <code>ERC-20</code> token, <code>$EDI</code>, can enable access to the network level operator system, commonly referred to as "master nodes". This is both a network and a legal operation as operators are part of a limited partnership that is compensated from Freight Trust Inc.</p>
+</div>
+<div class="paragraph">
+<p>Network operation is distributed amongst “Master Nodes”. An amount of $EDI is required, x, in order to be able to be eligible for hosting part of the main network.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_categories_for_network_operations"><a class="anchor" href="#_categories_for_network_operations"></a>Categories for Network Operations</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">[
+    {"Category":"Nodes","Item":"Authority,Validator,Failover"},
+    {"Category":"Nodlet","Item":"query,sync,transaction"},
+    {"Category":"Staking","Item":"Operator,Pool"}
+]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_end_market_fundamentals"><a class="anchor" href="#_end_market_fundamentals"></a>End-market fundamentals</h3>
+<div class="paragraph">
+<p>In our use case, we assume that the platform will accrue transaction volumes at a consistent dollar rate per user transaction set (e.g. EDI transaction to a trading partner). This transaction volume would likely be composed of an end-user directly paying for the transaction on a per kilobyte basis.</p>
+</div>
+<div class="paragraph">
+<p><strong>Value flows being distributed in the native cryptoasset requires an exogenous assumption to form a base of value</strong>, and even then, the supply-side’s assessment of the value they’re receiving can be unpredictable given the native asset’s volatility. We can make the assumption that at equilibrium the service should be 1/10th the cost of a service provisioned by a company comparable (e.g., storage at 1/10th the cost of AWS), as only networks that are more efficient than companies will be able to get demand-sides to make the leap. The cost of the service can then be pinpointed, the units of the service consumed can be projected, and the product of the two is the value stream flowing to the supply-side.</p>
+</div>
+<div class="paragraph">
+<p>That value stream is what the cryptocapital has claim to, and so the capital asset component of value can be assessed. The “outside” anchor is the cost of comparable services that the cryptonetwork (freight trust network) will be competing with, though trouble remains if the native cryptoasset is too volatile, as that volatility influences the supply-sides’ perception of what they’re getting paid. Freight Trust, Inc includes a few “legacy” mechanisms to address this point, such as payment to node operators in fiat, thus establishing a fixed cost floor.</p>
+</div>
+<div class="paragraph">
+<p>Governance mechanisms in general should:
+1) Attract a willing supply-side that produces the resource (node operators, stakeholders, community et al)</p>
+</div>
+<div class="paragraph">
+<p>2) Connect that resource to a demand-side that values and is willing to pay for the resource (businesses)</p>
+</div>
+<div class="paragraph">
+<p>3) It creates an open layer of access to the underlying resource for distributors that want to build the last mile to the consumer. (Freight Trust Corporate)
+As of right now, no formal governance mechanism besides the informal RFC process exists for EDI. We plan in the following days to formally propose a new governance mechanism based upon Dynamic Alignment. We have included a graphic to illustrate the idea behind it</p>
+</div>
+<div class="paragraph">
+<p>[ IMAGE ]</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Attribution-NonCommercial-NoDerivs 2.5.</p>
+  <p>(C) 2020 FreightTrust and Clearing Corporation. The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

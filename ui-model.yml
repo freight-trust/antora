@@ -65,63 +65,81 @@ page:
     content: Quickstart
     url: '#'
     urlType: 'internal'
+    branches: HEAD
   next:
     content: Rulebook
     url: '#'
     urlType: 'internal'
+    branches: HEAD
   breadcrumbs:
   - content: Freight Trust & Clearing
     url: '#'
     urlType: fragment
+    branches: HEAD
   - content: Omnibus
     url: '#'
     urlType: internal
+    branches: HEAD
   navigation:
   - root: true
     content: Rulebook
     url: /rulebook/legal-parity.html
     urlType: fragment
     items:
+    branches: HEAD
   - content: General
     url: /rulebook/general.html
     urlType: fragment
+    branches: HEAD
   - content: Governance
     url: /rulebook/governance.html
     urlType: fragment
+    branches: HEAD
   - content: Network Participants 
     url: /rulebook/network-clearing-participants.html
     urlType: fragment
+    branches: HEAD
   - content: Delivery & Settlement
     url: /rulebook/delivery-and-settlement.html
     urlType: fragment
+    branches: HEAD
   - content: Obligations
     url: /rulebook/obligations.html
     urlType: fragment
+    branches: HEAD
   - content: Suspension
     url: /rulebook/suspension.html
     urlType: fragment
+    branches: HEAD
   - content: Supply Chain
     url: "#"
     urlType: fragment
+    branches: HEAD
     items:
     - content: Bills of Lading
       url: /supply-chain/bill-of-lading/bill-of-lading-rules.html
       urlType: fragment
+      branches: HEAD
     - content: Non Negotiable BOL
       url: /supply-chain/bill-of-lading/non-negotiable-bol.html
       urlType: fragment
+      branches: HEAD
     - content: Customs & Freight Forwarders
       url: /supply-chain/customs/customs-broker-power-of-attorney.html
       urlType: fragment
+      branches: HEAD
     - content: INCO Terms
       url: /supply-chain/incoterms.html
       urlType: fragment
+      branches: HEAD
     - content: Warehouse Receipts
       url: /supply-chain/warehouse/non-negotiable-warehouse-receipts.html
       urlType: fragment
+      branches: HEAD
     - content: EDI 856
       url: /supply-chain/warehouse/856.html
       urlType: fragment
+      branches: HEAD
   - content: Blockchain Network
     url: /blockchain/token-overview.html
     urlType: fragment
@@ -129,18 +147,23 @@ page:
     - content: Protocol
       url: /blockchain/contracts-v1.html
       urlType: fragment
+      branches: HEAD
     - content: Pricing Model
       url: /blockchain/pricing.html
       urlType: fragment
+      branches: HEAD
     - content: Token Staking & Mechanics
       url: /blockchain/staking.html
       urlType: fragment
+      branches: HEAD
     - content: Network Upgrading
       url: /blockchain/network-upgrade.html
       urlType: fragment
+      branches: HEAD
     - content: Wallets
       url: /blockchain/add-metamask.html
       urlType: fragment
+      branches: HEAD
   - content: Network
     url: '#'
     urlType: fragment
@@ -148,36 +171,47 @@ page:
     - content: Whitelists
       url: /network/Updating-Whitelists.html
       urlType: fragment
+      branches: HEAD
     - content: Primitive Protocol Layer
       url: /eas2.html
       urlType: fragment
+      branches: HEAD
     - content: Account Management 
       url: /network/Account-Management.html
       urlType: fragment
+      branches: HEAD
     - content: Protocol Axioms
       url: /whitepapers/axioms.html
       urlType: fragment
+      branches: HEAD
     - content: EDI Explainer
       url: /blockchain/explain-edi.html
       urlType: fragment
+      branches: HEAD
     - content: Network Design
       url: /whitepapers/network-design.html
       urlType: fragment
+      branches: HEAD
     - content: VBSM Methodology
       url: /blockchain/vbsm.html
       urlType: fragment
+      branches: HEAD
     - content: Smart Contract
       url: /whitepapers/smart-contract-practices.html
       urlType: fragment 
+      branches: HEAD
     - content: Smart Contract Best Practices
       url: /blockchain/smart-contract-dev.html
       urlType: fragment 
+      branches: HEAD
     - content: Safety and Continiuty
       url: /whitepapers/safety-and-continiuty.html
       urlType: fragment 
+      branches: HEAD
     - content: ADR Template
       url: /whitepapers/adr.html
       urlType: fragment 
+      branches: HEAD
   - content: Pricing
     url: '#'
     urlType: fragment
@@ -185,12 +219,15 @@ page:
     - content: Transaction Pricing
       url: /corporate/transaction-pricing.html
       urlType: fragment
+      branches: HEAD
     - content: Pricing Specification Precedence
       url: /corporate/pricing-spec-precedence.html
       urlType: fragment
+      branches: HEAD
     - content: Token Pricing
       url: /blockchain/pricing.html
-      urlType: fragment       
+      urlType: fragment
+      branches: HEAD       
   - content: Enterprise
     url: /eas2.html
     urlType: fragment
@@ -198,18 +235,23 @@ page:
     - content: Accepted Message Structures
       url: /service-bus/message-structure.html
       urlType: fragment
+      branches: HEAD
     - content: Gateway 
       url: /whitepapers/as2protocol.html
       urlType: fragment
+      branches: HEAD
     - content: B2B Message Protocols
       url: /eas2.html
       urlType: fragment
+      branches: HEAD
     - content: X12/EDIFACT Interchange
       url: /service-bus/edi-x12.html
       urlType: fragment
+      branches: HEAD
     - content: X12/EDIFACT Parser
       url: /service-bus/x12-parser.html
       urlType: fragment
+      branches: HEAD
   - content: Engineering & Operations
     url: /engineering.html
     urlType: fragment
@@ -217,15 +259,19 @@ page:
     - content: Safety and Continiuty
       url: /service-bus/safety-and-continiuty.html
       urlType: fragment
+      branches: HEAD
     - content: Incident Response Plan
       url: /corporate/irp.html
       urlType: fragment
+      branches: HEAD
     - content: Defects
       url: /corporate/defects.html
       urlType: fragment
+      branches: HEAD
     - content: Smart Contract Practices
       url: /whitepapers/smart-contract-dev.html
       urlType: fragment
+      branches: HEAD
   - content: Corporate
     url: '#'
     urlType: fragment
@@ -233,24 +279,31 @@ page:
     - content: Incident Response Plan
       url: /corporate/irp.html
       urlType: fragment
+      branches: HEAD
     - content: Document Retention Policy
       url: /corporate/document-retention-policy.html
       urlType: fragment
+      branches: HEAD
     - content: Safety and Continiuty
       url: /service-bus/safety-and-continiuty.html
       urlType: fragment
+      branches: HEAD
     - content: Corporate Bylaws
       url: /corporate/bylaws.html
       urlType: fragment
+      branches: HEAD
     - content: GPL Cooperation Commitment
       url: /corporate/GPL-cooperation-commitment.html
       urlType: fragment
+      branches: HEAD
     - content: Code of Conduct
       url: /corporate/privacy-policy.html
       urlType: fragment
+      branches: HEAD
     - content: CCPA
       url: /corporate/ccpa.html
       urlType: fragment
+      branches: HEAD
   - content: Whitepapers
     url: '#'
     urlType: fragment
@@ -258,18 +311,24 @@ page:
     - content: CDM
       url: /whitepapers/util.html
       urlType: fragment   
+      branches: HEAD
     - content: Design Considerations
       url: /whitepapers/util.html
       urlType: fragment     
+      branches: HEAD
     - content: Message Design
       url: /whitepapers/message-design.html
       urlType: fragment    
+      branches: HEAD
     - content: Leximatic Grammer
       url: /grammar/index.html
       urlType: fragment
+      branches: HEAD
     - content: Comparision to other Frameworks
       url: /whitepapers/similarities-to-existing-regulatory-frameworks.html
       urlType: fragment
+      branches: HEAD
     - content: Axioms
       url: /whitepapers/axioms.html
       urlType: fragment
+      branches: HEAD
