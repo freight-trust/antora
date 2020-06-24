@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Freight Trust Smart Contract Documentation :: Freight Trust &amp; Clearing Omnibus</title>
+    <meta name="generator" content="Antora 1.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://freight-docs.netlify.app">Freight Trust &amp; Clearing Omnibus</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="Global Data Service Interchange" data-version="3.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="#"></a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/legal-parity.html">Rulebook</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/general.html">General</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/governance.html">Governance</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/network-clearing-participants.html">Network Participants</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/delivery-and-settlement.html">Delivery & Settlement</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/obligations.html">Obligations</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <a class="nav-link" href="/rulebook/suspension.html">Suspension</a>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/supply-chain/README.html">Supply Chain</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/bill-of-lading-rules.html">Bills of Lading (211)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/bill-of-lading/non-negotiable-bol.html">Non Negotiable BOL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/customs/customs-broker-power-of-attorney.html">Customs & Freight Forwarders</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/incoterms.html">INCO Terms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/non-negotiable-warehouse-receipts.html">Warehouse Receipts</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/supply-chain/warehouse/856.html">EDI 856</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/blockchain/token-overview.html">Blockchain Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/contracts-v1.html">Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Pricing Model</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/staking.html">Token Staking & Mechanics</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/network-upgrade.html">Network Upgrading</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/add-metamask.html">Wallets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Network</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Updating-Whitelists.html">Whitelists</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">Primitive Protocol Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/network/Account-Management.html">Account Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/axioms.html">Protocol Axioms</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/explain-edi.html">EDI Explainer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/network-design.html">Network Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/vbsm.html">VBSM Methodology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-practices.html">Smart Contract</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/smart-contract-dev.html">Smart Contract Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/adr.html">ADR Template</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Pricing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/transaction-pricing.html">Transaction Pricing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/pricing-spec-precedence.html">Pricing Specification Precedence</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/blockchain/pricing.html">Token Pricing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/eas2.html">Enterprise</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/message-structure.html">Accepted Message Structures</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/as2protocol.html">Gateway</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/eas2.html">B2B Message Protocols</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/edi-x12.html">X12/EDIFACT Interchange</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/x12-parser.html">X12/EDIFACT Parser</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="/engineering.html">Engineering & Operations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/defects.html">Defects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/whitepapers/smart-contract-dev.html">Smart Contract Practices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Corporate</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/irp.html">Incident Response Plan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/document-retention-policy.html">Document Retention Policy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/service-bus/safety-and-continiuty.html">Safety and Continiuty</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/bylaws.html">Corporate Bylaws</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/GPL-cooperation-commitment.html">GPL Cooperation Commitment</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/privacy-policy.html">Code of Conduct</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/corporate/ccpa.html">CCPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#">Whitepapers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/grammar/index.html">Leximatic Grammer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="/grammar/output.html">CDM</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Omnibus</span>
+    <span class="version">1.4.5</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">EDI Service Bus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="#">3.1.0</a>
+        </li>
+        <li class="version">
+          <a href="#">3.0.0</a>
+        </li>
+        <li class="version">
+          <a href="rulebook/general.html"></a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Omnibus</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="https://github.com/freight-chain">1.4.5</a>
+        </li>
+        <li class="version is-current">
+          <a href="#">1.4.5</a>
+        </li>
+        <li class="version">
+          <a href="#">2.0.7</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Customs Interface</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="tradedocs.html">USA</a>
+        </li>
+        <li class="version">
+          <a href="#">CA</a>
+        </li>
+        <li class="version">
+          <a href="#">JPY</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li>Freight Trust & Clearing</li>
+    <li><a href="#">Omnibus</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="http://github.com/freight-trust/antora">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Freight Trust Smart Contract Documentation</h1>
+<div id="preamble">
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">software name</th>
+<th class="tableblock halign-left valign-top">license</th>
+<th class="tableblock halign-left valign-top">support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maidenlane v.1.9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BSD-3 New</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:support@freight.zendesk.com">support@freight.zendesk.com</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Maidenlane v1.9.0 + Documentation last updated: 5/16/2020</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"></dt>
+<dd>
+<p>danger</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>v2.0.0 will be incompatible with any version below 2.0.0 + Support for below version 2.0.0 will be on-going through 2022.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"></dt>
+<dd>
+<p>= UniversalABI</p>
+</dd>
+</dl>
+</div>
+<h4 id="_universalabi" class="discrete">UniversalABI</h4>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_settarget_read"><a class="anchor" href="#_settarget_read"></a>setTarget - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- ||bytes4| ||address| <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getcontroller_view"><a class="anchor" href="#_getcontroller_view"></a>getController - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gettarget_view"><a class="anchor" href="#_gettarget_view"></a>getTarget - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- ||bytes4| <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changecontroller_read"><a class="anchor" href="#_changecontroller_read"></a>changeController - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- ||address| <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getmaster_view"><a class="anchor" href="#_getmaster_view"></a>getMaster - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pause_read"><a class="anchor" href="#_pause_read"></a>pause - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changemaster_read"><a class="anchor" href="#_changemaster_read"></a>changeMaster - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- ||address| <strong>Add Documentation for the method here</strong></p>
+</div>
+</div>
+</div>
+<h1 id="_masterproxy" class="sect0"><a class="anchor" href="#_masterproxy"></a>MasterProxy</h1>
+<div class="sect1">
+<h2 id="_settarget_read_2"><a class="anchor" href="#_settarget_read_2"></a>setTarget - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |functionSel|bytes4|The function selector for which routing is adjusted |newTarget|address|The new destination to which calls with the selector will be routed Allows the controller to set a delegate target for a function selector Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setmaster_read"><a class="anchor" href="#_setmaster_read"></a>setMaster - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |newMaster|address|The new default delegate target for the universal proxy Allows the controller to set a new master address.
+Note that <em>this contract</em>     is deployed at the master address by default.
+Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getcontroller_view_2"><a class="anchor" href="#_getcontroller_view_2"></a>getController - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> Returns the controller address of the universal proxy that is calling this contract.
+Return : The controller address of the universal proxy Returns: |name |type |description |----|----|-------- ||address|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gettarget_view_2"><a class="anchor" href="#_gettarget_view_2"></a>getTarget - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |functionSel|bytes4|The function selector to check Returns the address to which execution is delegated for a given function selector Return : address The address to which execution will be delegated for the selector Returns: |name |type |description |----|----|-------- ||address|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changecontroller_read_2"><a class="anchor" href="#_changecontroller_read_2"></a>changeController - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |newController|address|The address to which permissions will be transferred Allows the controller to transfer permissions to a new address Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getmaster_view_2"><a class="anchor" href="#_getmaster_view_2"></a>getMaster - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> Returns the master address of the universal proxy that is calling this contract.
+Return : The master address of the universal proxy Returns: |name |type |description |----|----|-------- ||address|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pause_read_2"><a class="anchor" href="#_pause_read_2"></a>pause - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> Allows the controller to flip the pause status of the application Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fallback_read"><a class="anchor" href="#_fallback_read"></a>fallback - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong> Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<h1 id="_erc721tokenreceiver" class="sect0"><a class="anchor" href="#_erc721tokenreceiver"></a>ERC721TokenReceiver</h1>
+<div class="sect1">
+<h2 id="_onerc721received_read"><a class="anchor" href="#_onerc721received_read"></a>onERC721Received - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_operator|address|The address which called <code>safeTransferFrom</code> function |_from|address|The address which previously owned the token |_tokenId|uint256|The NFT identifier which is being transferred |_data|bytes|Additional data with no specified format The ERC721 smart contract calls this function on the recipient  after a <code>transfer</code>.
+This function MAY throw to revert and reject the  transfer.
+Return of other than the magic value MUST result in the  transaction being reverted.
+Note: the contract address is always the message sender.
+Return : <code>bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))</code>  unless throwing Returns: |name |type |description |----|----|-------- ||bytes4|</p>
+</div>
+</div>
+</div>
+<h1 id="_nftextended" class="sect0"><a class="anchor" href="#_nftextended"></a>NFTExtended</h1>
+<div class="openblock partintro">
+<div class="content">
+Module NFTExtennded
+</div>
+</div>
+<div class="sect1">
+<h2 id="_supportsinterface_view"><a class="anchor" href="#_supportsinterface_view"></a>supportsInterface - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_id|bytes4| <strong>Add Documentation for the method here</strong> Returns: |name |type |description |----|----|-------- ||bool|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_name_view"><a class="anchor" href="#_name_view"></a>name - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong> Returns: |name |type |description |----|----|-------- ||string|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getapproved_view"><a class="anchor" href="#_getapproved_view"></a>getApproved - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_tokenId|uint256|The token being queried Get the approved address of the specified token Return : The approved address of the specified token Returns: |name |type |description |----|----|-------- ||address|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_approve_read"><a class="anchor" href="#_approve_read"></a>approve - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>approved|address| |_tokenId|uint256| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_totalsupply_view"><a class="anchor" href="#_totalsupply_view"></a>totalSupply - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong> Returns: |name |type |description |----|----|-------- ||uint256|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signedtransfer_read"><a class="anchor" href="#_signedtransfer_read"></a>signedTransfer - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>from|address|The address that should own NFT at the start of the transaction |_to|address|The recipient of the transfer |_tokenId|uint256|The id of the token to be transferred |_sig|bytes|The signature that may authorize the transfer Transfers an NFT token if the message representing the transaction was signed by _from Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_createrecord_read"><a class="anchor" href="#_createrecord_read"></a>createRecord - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>record|bytes32| |_participant|address| |_sOwner|bytes| |_sPart|bytes| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transferfrom_read"><a class="anchor" href="#_transferfrom_read"></a>transferFrom - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>from|address| |_to|address| |_tokenId|uint256| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tokenofownerbyindex_view"><a class="anchor" href="#_tokenofownerbyindex_view"></a>tokenOfOwnerByIndex - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_owner|address|An address where we are interested in NFTs owned by them |_index|uint256|A counter less than <code>balanceOf(_owner)</code> Throws if <code>_index</code> &gt;= <code>balanceOf(_owner)</code> or if  <code>_owner</code> is the zero address, representing invalid NFTs.
+Return : The token identifier for the <code>_index</code>th NFT assigned to <code>_owner</code>,   (sort order not specified) Returns: |name |type |description |----|----|-------- ||uint256|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_safetransferfrom_read"><a class="anchor" href="#_safetransferfrom_read"></a>safeTransferFrom - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>from|address| |_to|address| |_tokenId|uint256| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tokenbyindex_view"><a class="anchor" href="#_tokenbyindex_view"></a>tokenByIndex - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_index|uint256|A counter less than <code>totalSupply()</code> Throws if <code>_index</code> &gt;= <code>totalSupply()</code>.
+Return : The token identifier for the <code>_index</code>th NFT,  (sort order not specified) Returns: |name |type |description |----|----|-------- ||uint256|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_versionrecordsigned_read"><a class="anchor" href="#_versionrecordsigned_read"></a>versionRecordSigned - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>record|bytes32| |_updated|bytes32| |_sig|bytes| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ownerof_view"><a class="anchor" href="#_ownerof_view"></a>ownerOf - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_tokenId|uint256|The id of the specified nft token Returns the owner address of the specified token Return : The address of the owner of the token Returns: |name |type |description |----|----|-------- ||address|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_balanceof_view"><a class="anchor" href="#_balanceof_view"></a>balanceOf - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_owner|address|The owner of the nfts Count all of the nfts owned by the _owner Return : Returns a count of the nfts owned by the _owner Returns: |name |type |description |----|----|-------- ||uint256|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_versionrecord_read"><a class="anchor" href="#_versionrecord_read"></a>versionRecord - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>record|bytes32| |_updated|bytes32| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_symbol_view"><a class="anchor" href="#_symbol_view"></a>symbol - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>No parameters</em> <strong>Add Documentation for the method here</strong> Returns: |name |type |description |----|----|-------- ||string|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setapprovalforall_read"><a class="anchor" href="#_setapprovalforall_read"></a>setApprovalForAll - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>operator|address| |_approved|bool| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_safetransferfrom_read_2"><a class="anchor" href="#_safetransferfrom_read_2"></a>safeTransferFrom - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>from|address| |_to|address| |_tokenId|uint256| |_data|bytes| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_isapprovedforall_view"><a class="anchor" href="#_isapprovedforall_view"></a>isApprovedForAll - view</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |_owner|address|The address that owns the NFTs |_operator|address|The address that acts on behalf of the owner Return : True if <code>_operator</code> is an approved operator for <code>_owner</code>, false otherwise Returns: |name |type |description |----|----|-------- ||bool|</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recordcreated_read"><a class="anchor" href="#_recordcreated_read"></a>RecordCreated - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |locator|uint256| |owner|address| |participant|address| <strong>Add Documentation for the method here</strong> Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recordupdated_read"><a class="anchor" href="#_recordupdated_read"></a>RecordUpdated - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |record|uint256| |updated|uint256| |owner|address| <strong>Add Documentation for the method here</strong> Returns: <em>No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_approval_read"><a class="anchor" href="#_approval_read"></a>Approval - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>owner|address| |_approved|address| |_tokenId|uint256| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transfer_read"><a class="anchor" href="#_transfer_read"></a>Transfer - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>from|address|The address that should own NFT at the start of the transaction |_to|address|The recipient of the transfer |_tokenId|uint256|The id of the token to be transferred Transfers an NFT token if the message representing the transaction was signed by _from Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_approvalforall_read"><a class="anchor" href="#_approvalforall_read"></a>ApprovalForAll - read</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>|name |type |description |----|----|-------- |<em>owner|address| |_operator|address| |_approved|bool| <strong>Add Documentation for the method here</strong> Returns: _No parameters</em></p>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
